@@ -4,7 +4,6 @@ void cargar(int v[2]);
 float distancia(int v1[2],int v2[2]);
 int main ()
   {
-  int result;
   int v1[2];
   int v2[2];
   cargar (v1);
@@ -22,7 +21,7 @@ float distancia(int v1[2],int v2[2]){
     int resta2;
        resta1=v2[0]-v1[0];
        resta2=v2[1]-v1[1];
-    int result;
+    float result;
        result=sqrt(pow(resta1,2)+pow(resta2,2));
-       return result;
+       printf("La distancia entre los dos vectores es %f",result);
 }
